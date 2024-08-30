@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+
+int alice[3];
+int bob[3];
+
+int alicenum = 0;
+int bobnum = 0;
+
+for (int i =0; i<3;i++){
+    scanf("%d",&alice[i]);
+}
+
+for (int i=0;i<3;i++){
+    scanf("%d",&bob[i]);
+}
+
+for (int i=0;i<3;i++){
+    if (alice[i]>bob[i])
+    {alicenum++;}
+    else if(alice[i]< bob[i])
+    {
+        bobnum++;
+    }
+
+}
+printf("%d %d",alicenum,bobnum);
+ return 0;
+}
